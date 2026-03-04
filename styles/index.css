@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 100%;
+    margin: auto;
+}
+.titulomaster{
+    font-family: "Poppins", sans-serif;
+    color: #046179;
+}
+.titulo{
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 0%;
+    margin: 2rem 0 0.1rem;
+}
+.card{
+    background-color: #046179;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 9rem 3rem 1rem;
+    margin: 9rem 3rem 1rem 3rem;
+    position: relative;
+    border-radius: 15px;
+}
+.FundoPrincipal{
+    background-color: #efefef;
+}
+footer{
+    background-color: #3a3a3a;
+    color: #ffffff;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+header{
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+}
+.txt{
+    color: #222222;
+    list-style: none;
+    margin: 0rem 2rem 2rem;
+    padding: 0;
+}
+img{
+    position: absolute;
+    width: 15rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    top: -7rem;
+    border-width: 4px;
+    border-color: #046179;
+    border-style: solid;
+}
+section{
+    text-align: center;
+}
+.icones{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.apertar{
+    background-color: #046179;
+    border-radius: 100px;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    color:#ffffff;
+    font-weight: 600;
+    border-color: #023a47;
+    border-width: 5px;
+}
+h3{
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+
+@media (min-width: 768px) {
+    
+    main {
+        display: flex;
+        flex-direction: row-reverse; 
+        justify-content: center;    
+        align-items: flex-start;    
+        gap: 20px;                  
+        width: 100%;
+        max-width: 1200px;          
+        margin: 0 auto;             
+        position: relative;
+    }
+
+    section, .card {
+        flex: 1;            /* Divide o espaço disponível em partes iguais (Google) */
+        flex-basis: 0;      /* Força todas a começarem com largura 0 para o cálculo ser justo (Google) */
+        min-width: 0;       
+        margin-top: 8rem;   
+    }
+
+    .card {
+        padding: 9rem 3rem 1rem;
+        transition: transform 0.3s ease;
+        border-radius: 25px;
+    }
+
+    button {
+       transition: transform 0.5s ease;
+    }
+    .card:hover, button:hover{
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .txt {
+        margin-top: 4%;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    header {
+        font-size: 1.2rem;
+    }
+}
